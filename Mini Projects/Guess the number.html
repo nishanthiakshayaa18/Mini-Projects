@@ -1,0 +1,41 @@
+<style>
+    #one{
+        cursor: pointer;
+        
+    }
+</style>
+<h1>Guess the Number</h1>
+<input id="one">
+<button onclick="game()">Check</button>
+<p id="ans">Answer</p>
+<h4 id="two">Points:10</h4>
+<script>
+    var point=document.getElementById("two")
+    var p=10
+    //guess
+    var guess = document.getElementById("one")
+    var g = guess.value
+    console.log(Number(g))
+    //number
+    var number = Math.random()
+    var n = Math.floor(number * 10 + 1)
+    console.log(n)
+    //Answer statement
+    var a = document.getElementById("ans")
+    function game() {
+        var g = guess.value
+        if (g == n) {
+            a.textContent = "You are right!"
+            alert("You won with "+ p +"points")
+            
+        }
+        else {
+            p=p-1
+            a.textContent="You are wrong!"
+            point.textContent="Points:"+p
+            
+        }
+    }
+    
+    
+</script>

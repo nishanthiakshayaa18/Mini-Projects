@@ -1,0 +1,28 @@
+* {
+    padding: 0px;
+    margin: 0%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: darkslategrey;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+img {
+    height: 5cm;
+    width: 5cm;
+    flex-basis: 20%;
+    margin: 2.5%;
+}
+
+.title {
+    color: honeydew;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,25 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div>
+<h1>TO-DO LIST</h1>
+<input id="item">
+<button onclick="add()">ADD</button>
+<table><ul id="list">
+    <tr>z<li >Apple <button onclick=deleteitem(event)>DELETE</button></li>
+</ul></table>
+</div>
+
+
+<script>
+    var items=document.getElementById("item")
+    var list=document.getElementById("list")
+    function add(){
+        var newitem=document.createElement("li")
+        newitem.innerHTML=items.value+"<button onclick=(deleteitem(event))>DELETE</button>"
+        list.append(newitem)
+    }
+    function deleteitem(){
+        event.target.parentElement.remove()
+    }
+</script>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <form id="studentForm">
+        <h1>STUDENTS FORM</h1><br>
+        <table id="formtable">
+            <tr>
+                <td>Name</td>
+                <td><input id="name" type="text"></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input id="age" type="number"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input id="male" name="Gender" type="radio" value="Male">Male
+                    <input id="female" type="radio" name="Gender" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Course</td>
+                <td><select id="course" type="select"><option>Python</option><option>CSS</option></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input id="email" type="email"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><button type="button" onclick="save()">SAVE</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <table id="datatable">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>COURSE</th>
+                <th>GENDER</th>
+                <th>EMAIL</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+
+</html>

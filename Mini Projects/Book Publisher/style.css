@@ -1,0 +1,132 @@
+/* Navigation bar styling */
+#nav {
+    background-color: rgb(205, 63, 82);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Add button styling */
+#addbutton {
+    background-color: rgb(205, 63, 82);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 60px;
+    position: absolute;
+    left: 95%;
+    top: 90%;
+}
+
+#addbutton:hover {
+    background-color: rgb(68, 4, 4);
+}
+
+/* Popup box styling */
+.popupbox {
+    background-color: rgb(233, 114, 114);
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 40%;
+    top: 30%;
+    left: 30%;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    font-size: 30px;
+}
+
+/* Table styling inside popup box */
+table {
+    width: 100%;
+    font-size: 30px;
+}
+
+/* Input styling inside popup box */
+table input, table textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Button styling inside popup box */
+.button button {
+    background-color: brown;
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+/* Full-screen overlay styling */
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 90%;
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+/* Container for the book elements */
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Individual book container styling */
+.book-container {
+    background-color: rgb(3, 3, 3);
+    width: 8cm;
+    height: auto;
+    margin-top: 2px;
+    border-radius: 10px;
+    color: honeydew;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    display: none;
+    margin: 10px;
+}
+
+.book-container h1 {
+    text-align: center;
+    background-color: brown;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.book-container p {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: brown;
+    border-radius: 5px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.book-container button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+}
+
+.book-container button:hover {
+    background-color: darkred;
+}

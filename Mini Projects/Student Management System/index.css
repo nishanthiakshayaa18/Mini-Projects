@@ -1,0 +1,25 @@
+body{
+    background-color: aquamarine;
+}
+table,th,tr,thead,td{
+    border: 2px;
+    border-style: solid;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+form{
+    margin-left: 25%;
+    width: 40%;
+    background-color: gainsboro;
+    padding: 5px;
+    text-align: center;
+}
+form table{
+    position: relative;
+    margin-left: 25%;
+}
+#datatable{
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+}
